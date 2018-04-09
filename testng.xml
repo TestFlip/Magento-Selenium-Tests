@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TestAll">
+
+    <test name="admin" parallel="false">
+        <classes>
+            <class name="Tests.Admin.Authentication.AdminInvalidLogin" />
+            <class name="Tests.Admin.Authentication.AdminNoPasswordLogin" />
+            <class name="Tests.Admin.Authentication.AdminNoUsernameLogin" />
+            <class name="Tests.Admin.Authentication.AdminValidLogin" />
+        </classes>
+    </test>
+
+    <test name="CustomerAuthentication" parallel="false">
+        <classes>
+            <class name="Tests.CustomerAuthentication.CustomerInvalidLogin" />
+            <class name="Tests.CustomerAuthentication.CustomerNoPasswordLogin" />
+            <class name="Tests.CustomerAuthentication.CustomerValidLogin" />
+        </classes>
+    </test>
+
+    <test name="CustomerRegistration" parallel="false">
+        <classes>
+            <class name="Tests.CustomerRegistration.CustomerRegistrationInvalidEmail" />
+            <class name="Tests.CustomerRegistration.CustomerRegistrationNewUser" />
+            <class name="Tests.CustomerRegistration.CustomerRegistrationNoFields" />
+        </classes>
+    </test>
+
+    <test name="ShoppingCart" parallel="false">
+        <classes>
+            <class name="Tests.ShoppingCart.OrderBreatheEasyTankByListing" />
+        </classes>
+    </test>
+
+</suite>
