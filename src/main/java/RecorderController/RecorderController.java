@@ -47,7 +47,7 @@ public class RecorderController {
 
     public void UploadSession(String name, Integer releaseID) {
         JavascriptExecutor js = (JavascriptExecutor) m_Driver;
-        js.executeScript("var event = new CustomEvent('Event', {detail: {name: '"+ name + "', apiKey: '" + m_APIKey + "', releaseID: " + releaseID + "}});" +
+        js.executeScript("var event = new CustomEvent('Event', {detail: {name: '"+ name + "', apiKey: '" + m_APIKey + "', source:'" + name + "', sourceLocation:'" + "Automation" + "', releaseID: " + releaseID + "}});" +
                 "        event.initEvent('upload_session');" +
                 "        document.dispatchEvent(event);");
     }

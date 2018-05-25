@@ -2,15 +2,6 @@
 
 <suite name="TestAll">
 
-    <test name="admin" parallel="false">
-        <classes>
-            <class name="Tests.Admin.Authentication.AdminInvalidLogin" />
-            <class name="Tests.Admin.Authentication.AdminNoPasswordLogin" />
-            <class name="Tests.Admin.Authentication.AdminNoUsernameLogin" />
-            <class name="Tests.Admin.Authentication.AdminValidLogin" />
-        </classes>
-    </test>
-
     <test name="CustomerAuthentication" parallel="false">
         <classes>
             <class name="Tests.CustomerAuthentication.CustomerInvalidLogin" />

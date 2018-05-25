@@ -11,8 +11,8 @@ import java.lang.reflect.Method;
 
 public class TestBase {
     /********** Replace with your own details ***********/
-    private final String API_KEY = "T4_-ooXpbpmkUY1ykPBZeuS-w";
-    private final Integer releaseID = 4;
+    private final String API_KEY = "8iZaAOepjTk2jG-QFQ6QunEwe";
+    private final Integer releaseID = 1;
 
     private String testName;
 
